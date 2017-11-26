@@ -1,0 +1,16 @@
+footer {
+    @include height_width(5rem, 100%);
+    position: fixed;
+    bottom: 0;
+    font: {
+        size: 1.4rem;
+        family: $quicksand;
+    }
+    text-align: center;    
+    background-color: $main_color;
+    color: $white_font;
+   
+        p {
+        padding-top: 1.5rem;
+        }
+}

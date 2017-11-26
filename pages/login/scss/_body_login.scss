@@ -1,0 +1,91 @@
+body {
+    height: 100vh;
+    
+    header {   
+        position: fixed;
+        top: 0;
+        width: 100%;
+           .container-fluid {
+                padding: 0;
+            }
+    
+            .row {
+                margin: 0;
+            }
+        
+            #nav {
+                background-color: $main_color;
+                height: 5rem;
+        
+                #oracle {
+                    @include height_width(6vh, 7rem);
+                    background: url('../../images/oracle_erp.png') center/contain no-repeat;
+                }
+            
+                a {
+                    padding: 0 .5rem;
+            
+                    i {
+                        padding-top: 1rem;
+                    }         
+                }
+                
+                .login {
+                    height: 4.5rem;
+                    text-align: center;
+                    font-size: 1.5rem;
+                    border-radius: .5rem;
+                    color: rgba(206, 205, 205, 0.5);
+                    transition: all 1s ease;
+        
+                        &:hover {
+                            text-decoration: none;
+                            color: $main_color;
+                            background-color: white;
+                        } 
+                }
+            }
+    }
+    
+
+    #form {
+        @include height_width(50vh, 70%);    
+        background-color: lightgray;
+        border-radius: 2rem;
+        font-family: $quicksand;
+    
+        h5 {
+            padding-bottom: 5rem;
+            color: $main_color;
+            font: {
+                size: 2rem;
+                weight: 700;
+            }
+        }
+        
+        form {
+            font-size: 1.2rem;
+        
+            label {
+                margin-bottom: 1rem;
+            }
+        
+            input[id="login"] {
+                margin-left: 3.3rem;
+            }        
+        
+            input[id="password"] {
+                margin-left: 1rem;
+                margin-bottom: 1rem;
+            }        
+        
+            input[type="checkbox"] {
+                margin-left: .5rem;
+            }
+        
+            input[type="button"] {
+               margin-top: 1rem;
+            }       
+        }
+    }
+}

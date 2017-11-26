@@ -1,0 +1,65 @@
+@include media_queries_min(720px) {
+    body {
+        #form_container {
+            #form {          
+                #reservation_menu {
+                    i {
+                        font-size: 2.5rem;
+                    }
+                }
+            
+                #reservation_text {
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+        
+        button {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@include media_queries_min(992px) {
+    body {
+        #form_container {
+            #form {
+                #reservation_text {
+                    p {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    
+        footer {
+            text-align: left;
+        
+            p {
+                padding-left: 2rem;
+            }
+        }
+    }
+}
+
+@include media_queries_min(1200px) {
+    body {
+        #form_container {
+            #form {
+                #reservation_menu {
+                    i {
+                        font-size: 3rem;
+                    }
+                }
+            
+                #reservation_text {
+                    p {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

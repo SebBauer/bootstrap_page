@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 10px; }
+
+#mobile_slider #shutter_mobile, #mobile_slider #shutter_mobile_two {
+  width: 100%;
+  height: 40%;
+  z-index: 2; }
+
+header .container-fluid {
+  padding: 0; }
+header .row {
+  margin: 0; }
+header .dropdown-toggle::after {
+  content: none; }
+header .dropdown-menu {
+  background-color: #76224a;
+  min-width: 20rem; }
+header a {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.8rem; }
+header #logo_container {
+  margin-bottom: 1rem; }
+  header #logo_container #logo {
+    margin: 1rem 0;
+    background: url("../../images/qatar_airways_logo.png") center/cover no-repeat;
+    background-size: contain;
+    height: 16vh;
+    position: relative; }
+header #nav {
+  background-color: #691a40;
+  height: 5rem; }
+header #nav_bar button {
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: #691a40;
+  border: 1px solid white;
+  border-radius: .25rem; }
+header #nav_bar .dropdown-menu a {
+  color: white; }
+header #navbarNav .navbar-nav {
+  width: 100%; }
+  header #navbarNav .navbar-nav div a {
+    color: white; }
+header .socials a {
+  text-decoration: none; }
+  header .socials a i {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 2.2rem;
+    color: rgba(206, 205, 205, 0.5);
+    border-radius: 50%;
+    width: 3.3rem;
+    height: 3.3rem;
+    margin-left: .5rem;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+    header .socials a i:hover {
+      color: #691010;
+      border: none;
+      background-color: white; }
+header .login {
+  height: 4.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  color: rgba(206, 205, 205, 0.5);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
+  header .login:hover {
+    text-decoration: none;
+    color: #691010;
+    background-color: white; }
+
+@media (max-width: 991px) {
+  header .socials a i {
+    font-size: 1.3rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-left: .6rem; }
+  header .login {
+    font-size: 1.1rem; } }
+@media (min-width: 992px) {
+  header #nav_bar button {
+    display: none; }
+  header #nav_bar .dropdown-menu {
+    display: none; } }
+#mobile_slider {
+  position: relative;
+  padding: 0;
+  height: 60vh;
+  background: url("../../images/first_class.jpg") center/cover no-repeat; }
+  #mobile_slider #shutter_mobile {
+    background: -webkit-gradient(linear, left top, left bottom, from(#892d59), to(rgba(137, 45, 89, 0)));
+    background: linear-gradient(to bottom, #892d59, rgba(137, 45, 89, 0)); }
+  #mobile_slider #shutter_mobile_two {
+    position: absolute;
+    background: -webkit-gradient(linear, left bottom, left top, from(#892d59), to(rgba(137, 45, 89, 0)));
+    background: linear-gradient(to top, #892d59, rgba(137, 45, 89, 0));
+    bottom: 0; }
+
+#slider {
+  display: none; }
+
+#our_awards {
+  height: 100%;
+  background-color: #892d59; }
+  #our_awards #awards_intro {
+    font-family: "Caveat", cursive;
+    font-size: 1.8rem;
+    font-weight: 700;
+    height: auto;
+    padding: 1rem 1rem 0 1rem;
+    text-align: center;
+    background-color: #691a40;
+    color: #fff; }
+  #our_awards #awards {
+    height: 100%;
+    padding: 2rem 0; }
+    #our_awards #awards div {
+      padding: 1rem 0;
+      margin: 1rem 2rem;
+      border-radius: 1rem;
+      background-color: #76224a; }
+      #our_awards #awards div i {
+        color: #fff;
+        font-size: 3.5rem; }
+      #our_awards #awards div h5 {
+        font-family: "Quicksand", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        color: #fff; }
+      #our_awards #awards div p {
+        font-family: "Quicksand", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #fff; }
+
+#promotions {
+  background-color: #e8e8e8; }
+  #promotions h3 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 2rem;
+    padding: 2rem 0 3rem 10%; }
+  #promotions .promotion {
+    height: 20rem;
+    margin-bottom: 3rem;
+    padding: 0;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    overflow: hidden; }
+    #promotions .promotion #rome {
+      background: url("../../images/rome.jpg") center/cover no-repeat; }
+    #promotions .promotion #vien {
+      background: url("../../images/vien.jpg") center/cover no-repeat; }
+    #promotions .promotion #berlin {
+      background: url("../../images/berlin.jpg") center/cover no-repeat; }
+    #promotions .promotion #las_vegas {
+      background: url("../../images/las_vegas.jpg") center/cover no-repeat; }
+    #promotions .promotion #bali {
+      background: url("../../images/bali.jpg") center/cover no-repeat; }
+    #promotions .promotion #santorini {
+      background: url("../../images/santorini.jpg") center/cover no-repeat; }
+    #promotions .promotion #rio {
+      background: url("../../images/rio.jpg") center/cover no-repeat; }
+    #promotions .promotion #san_francisco {
+      background: url("../../images/san_francisco.jpg") center/cover no-repeat; }
+    #promotions .promotion .shutter_promotion {
+      display: none; }
+      #promotions .promotion .shutter_promotion i {
+        display: none; }
+    #promotions .promotion .promotion_photo {
+      height: 70%; }
+    #promotions .promotion .promotion_text {
+      height: 30%;
+      background-color: white; }
+      #promotions .promotion .promotion_text p {
+        font-family: "Quicksand", sans-serif;
+        font-size: 1.7rem;
+        font-weight: 700;
+        margin-bottom: .2rem;
+        padding-left: 1rem;
+        color: #691a40; }
+        #promotions .promotion .promotion_text p:last-child {
+          font-size: 2.3rem; }
+
+#contact {
+  overflow: hidden; }
+  #contact #contact_intro {
+    background-color: #691a40; }
+    #contact #contact_intro p {
+      font-family: "Caveat", cursive;
+      font-size: 1.8rem;
+      padding: 1rem 1rem 0 1rem;
+      text-align: center;
+      color: #fff; }
+      #contact #contact_intro p strong {
+        font-size: 2rem; }
+  #contact #contact_divs {
+    background-color: #892d59;
+    height: auto; }
+    #contact #contact_divs div:nth-child(-n+2) {
+      border-bottom: 1px dotted white; }
+    #contact #contact_divs div:first-child {
+      padding: 3rem 0 5rem 0; }
+    #contact #contact_divs div:nth-child(n+2) {
+      padding: 2rem 0; }
+    #contact #contact_divs div i {
+      margin: 2rem 0;
+      font-size: 5rem;
+      color: #fff; }
+    #contact #contact_divs div h6 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: whitesmoke; }
+    #contact #contact_divs div p {
+      font-family: "Quicksand", sans-serif;
+      font-size: 1.3rem;
+      color: #a8a8a8; }
+    #contact #contact_divs div .p_color {
+      color: whitesmoke;
+      font-weight: 700; }
+
+footer {
+  height: 5rem;
+  background-color: #691a40;
+  color: white;
+  font-size: 1.4rem;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center; }
+  footer p {
+    padding-top: 1.5rem; }
+
+@media (min-width: 992px) {
+  footer {
+    text-align: left; }
+    footer p {
+      padding-left: 2rem; } }
+@media (min-width: 576px) {
+  #our_awards #awards div {
+    border-bottom: none; }
+
+  #promotions .promotion {
+    margin-right: 4rem; }
+    #promotions .promotion:nth-of-type(even) {
+      margin-right: 0; } }
+@media (max-width: 991px) {
+  #our_awards .container div {
+    height: 15rem; } }
+@media (min-width: 992px) {
+  #mobile_slider {
+    display: none; }
+
+  #slider {
+    display: grid;
+    position: relative;
+    height: 70vh; }
+    #slider #shutter_one {
+      height: 40%;
+      width: 100%;
+      position: absolute;
+      background: -webkit-gradient(linear, left bottom, left top, from(#892d59), to(rgba(137, 45, 89, 0)));
+      background: linear-gradient(to top, #892d59, rgba(137, 45, 89, 0));
+      z-index: 2;
+      bottom: 0; }
+    #slider #carouselExampleIndicators .carousel-inner {
+      position: relative;
+      height: 70vh; }
+      #slider #carouselExampleIndicators .carousel-inner:nth-of-type(1) {
+        background: url("../../images/qatar_promo_three.jpg") center/cover no-repeat; }
+      #slider #carouselExampleIndicators .carousel-inner p {
+        color: darkslategray; }
+      #slider #carouselExampleIndicators .carousel-inner:nth-of-type(2) {
+        background: url("../../images/qatar_promo1.jpg") center/cover no-repeat; }
+      #slider #carouselExampleIndicators .carousel-inner:nth-of-type(3) {
+        background: url("../../images/thailand_promo.jpg") center/cover no-repeat; }
+      #slider #carouselExampleIndicators .carousel-inner .carousel-caption {
+        height: 23vh;
+        width: 20vw;
+        position: absolute;
+        border-radius: 1rem;
+        top: 2rem;
+        z-index: 4;
+        margin: 0 auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        #slider #carouselExampleIndicators .carousel-inner .carousel-caption h3 {
+          font-family: "Pacifico", cursive;
+          font-size: 3.7rem;
+          color: #691a40; }
+        #slider #carouselExampleIndicators .carousel-inner .carousel-caption p {
+          font-family: "Quicksand", sans-serif;
+          color: #fff;
+          font-size: 1.8rem;
+          padding: 1rem .5rem; }
+
+  #our_awards #awards_intro {
+    font-size: 2.7rem; }
+  #our_awards #awards div {
+    height: 20rem;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+    #our_awards #awards div:hover {
+      background-color: whitesmoke; }
+      #our_awards #awards div:hover i {
+        color: #691a40; }
+      #our_awards #awards div:hover h5 {
+        color: #691a40; }
+      #our_awards #awards div:hover p {
+        color: #691a40; }
+    #our_awards #awards div i {
+      font-size: 4rem; }
+    #our_awards #awards div h5 {
+      font-size: 1.9rem; }
+    #our_awards #awards div p {
+      font-size: 2rem; }
+
+  #promotions .promotion:nth-of-type(even) {
+    margin-right: 4rem; }
+  #promotions .promotion:nth-child(3), #promotions .promotion:nth-child(6), #promotions .promotion:nth-child(8) {
+    margin-right: 0; }
+  #promotions .promotion .shutter_promotion {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease; }
+    #promotions .promotion .shutter_promotion:hover {
+      background-color: rgba(105, 26, 64, 0.7);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 1; }
+      #promotions .promotion .shutter_promotion:hover div {
+        border-radius: 50%;
+        border: 3px solid white; }
+        #promotions .promotion .shutter_promotion:hover div i {
+          color: white; }
+    #promotions .promotion .shutter_promotion div {
+      height: 7rem;
+      width: 7rem;
+      border-radius: 50%;
+      border: 3px solid rgba(255, 255, 255, 0);
+      -webkit-transition: all 0.7s ease;
+      transition: all 0.7s ease; }
+      #promotions .promotion .shutter_promotion div i {
+        display: grid;
+        color: rgba(255, 255, 255, 0);
+        font-size: 3rem;
+        -webkit-transition: all 0.7s ease;
+        transition: all 0.7s ease; }
+
+  #contact #contact_intro p {
+    font-size: 2.7rem;
+    font-weight: 700; }
+    #contact #contact_intro p strong {
+      font-size: 3.5rem; }
+  #contact #contact_divs {
+    height: 30rem; }
+    #contact #contact_divs div {
+      height: 25rem; }
+      #contact #contact_divs div:nth-child(n+2) {
+        padding-top: 0; }
+      #contact #contact_divs div:nth-child(-n+2) {
+        border-bottom: none;
+        border-right: 1px dotted white; } }
+@media (min-width: 1100px) {
+  #slider #carouselExampleIndicators .carousel-inner .carousel-caption h3 {
+    font-size: 5rem; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,247 @@
+@include media_queries_min(576px) {
+    #our_awards {
+            #awards {
+                    div {
+                        border-bottom: none;                 
+                    }
+            }
+    }
+    
+    #promotions {
+        .promotion {
+            margin-right: 4rem;
+            
+            &:nth-of-type(even) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+
+@include media_queries_max(991px) { 
+    #our_awards {
+        .container {
+            div {
+                height: 15rem;
+            }
+        }
+    }
+}
+
+@include media_queries_min(992px) {   
+    #mobile_slider {
+        display: none;
+    }
+    
+    #slider {
+        display: grid;
+        position: relative;
+        height: 70vh;
+    
+        #shutter_one {
+            @include height_width(40%, 100%);
+            position: absolute;
+            background: linear-gradient(to top, $second_and_shutter_color, rgba(137, 45, 89, 0));
+            z-index: 2;
+            bottom: 0;
+        }    
+     
+        #carouselExampleIndicators {
+        
+            .carousel-inner {
+                position: relative;
+                height: 70vh;
+                
+                // Loop for slider //
+                
+                    @each $img_name in $image_slider_photo {
+            
+                        &:nth-of-type(#{$img_number}) {
+                            background: url('../../#{$img_path}#{$img_name}.jpg') center/cover no-repeat;
+                        } 
+                        @if ($img_number == 1) {
+                            p {
+                                color: darkslategray;
+                            }
+                        }
+            
+                        $img_number: $img_number + 1;
+                    }
+                    
+                
+  
+                .carousel-caption {
+                    @include height_width(23vh, 20vw);
+                    position: absolute;
+                    border-radius: 1rem;
+                    top: 2rem;
+                    z-index: 4;
+                    margin: 0 auto;
+                    flex-direction: column;     
+        
+                        h3 {
+                            font: {
+                                family: $pacifico;
+                                size: 3.7rem;
+                            }
+                            color: $main_color;
+                        }
+            
+                        p {
+                            font-family: $quicksand;
+                            color: $white_font;
+                            font-size: 1.8rem;
+                            padding: 1rem .5rem;
+            
+                        }
+                    }
+        
+            }
+        }
+    }
+    
+    #our_awards {
+        
+        #awards_intro {
+            font-size: 2.7rem;
+        }
+        
+        #awards {
+                div {     
+                    height: 20rem;
+                    transition: all 1s ease;
+                
+                        &:hover {
+                            background-color: whitesmoke;
+                    
+                            i {
+                                color: $main_color;
+                            }
+                    
+                            h5 {
+                                color: $main_color;
+                            }
+                    
+                            p {
+                                color: $main_color;
+                            }
+                        }
+                
+                i {
+                    font-size: 4rem;
+                }
+                
+                h5 {
+                    font-size: 1.9rem;
+                }
+                
+                p {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    
+    #promotions {
+        .promotion {
+            
+            &:nth-of-type(even) {
+                margin-right: 4rem;
+            }
+            
+            &:nth-child(3), &:nth-child(6), &:nth-child(8) {
+                margin-right: 0;    
+            }
+            
+            .shutter_promotion {              
+                display: grid;
+                @include height_width(100%, 100%);
+                position: absolute;
+                transition: $transition_index_promotion;
+                
+                    &:hover {              
+                        background-color: rgba(105, 26, 64, 0.7);
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        z-index: 1;
+                    
+                        div {
+                            border-radius: 50%;
+                            border: 3px solid white;
+                    
+                                i {
+                                    color: white;
+                                }              
+                        }
+                    }
+                
+                    div {
+                        @include height_width(7rem, 7rem);
+                        border-radius: 50%;
+                        border: 3px solid rgba(255, 255, 255, 0);
+                        transition: $transition_index_promotion;
+                
+                            i {
+                                display: grid;
+                                color: rgba(255, 255, 255, 0);
+                                font-size: 3rem;
+                                transition: $transition_index_promotion;
+                            }
+                        }                              
+            }            
+        }
+    }
+    
+    #contact {
+        
+        #contact_intro {
+            p {
+                font: {
+                    size: 2.7rem;
+                    weight: 700;
+                }
+                
+                strong {
+                    font-size: 3.5rem;
+                }
+            }         
+         }
+        
+            
+        #contact_divs {
+             height: 30rem;
+            
+            div {
+                height: 25rem;
+                
+                &:nth-child(n+2) {
+                    padding-top: 0;
+                }
+                
+                
+                &:nth-child(-n+2) {
+                    border-bottom: none;
+                    border-right: 1px dotted white; 
+                }
+            }
+        }
+    }
+}
+
+
+
+@include media_queries_min(1100px) {
+    #slider {
+        #carouselExampleIndicators {
+            .carousel-inner {
+                .carousel-caption {
+                    h3 {
+                        font-size: 5rem;
+                    }
+                }
+            }
+        }
+    }
+}

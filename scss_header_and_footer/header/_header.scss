@@ -1,0 +1,162 @@
+header {
+    .container-fluid {
+        padding: 0;
+    }
+    
+    .row {
+        margin: 0;
+    }
+    
+    .dropdown-toggle::after {
+        content: none;
+    }
+    
+    .dropdown-menu {
+        background-color: #76224a;
+        min-width: 20rem;
+    }
+    
+       a {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1.8rem;      
+    }
+    
+
+    
+    #logo_container {
+    
+        margin-bottom: 1rem;
+        
+    #logo{
+        margin: 1rem 0;
+        background: url('../../images/qatar_airways_logo.png') center/cover no-repeat;
+        background-size: contain;
+        height: 16vh;
+        position: relative;
+    }
+    }
+    
+    #nav {
+        background-color: #691a40;
+        height: 5rem;
+    }
+    
+    #nav_bar {
+        
+        button {
+        padding: .25rem .75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: #691a40;
+        border: 1px solid white;
+        border-radius: .25rem;
+        
+    }
+    
+        .dropdown-menu {
+        
+            a {
+                color: white;
+            }
+            
+        }
+        
+    }
+ 
+    #navbarNav{
+        
+
+    
+    .navbar-nav {
+        width: 100%;
+        
+        div{
+            
+            a {
+                color: white;
+            }
+        
+        
+    }
+        }
+    }
+    
+    
+    
+    
+    .socials {
+        
+        a {
+            text-decoration: none;
+        i {
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            font-size: 2.2rem;
+            color: rgba(206, 205, 205, 0.5);
+            border-radius: 50%;
+            width: 3.3rem;
+            height: 3.3rem;
+            margin-left: .5rem;
+            transition: all 1s ease;
+            
+            &:hover {
+                color: #691010;
+                border: none;
+                background-color: white;
+            }
+        }
+            
+        }
+    }
+    
+    .login {
+        height: 4.5rem;
+        text-align: center;
+        font-size: 1.5rem;
+        border-radius: .5rem;
+        color: rgba(206, 205, 205, 0.5);
+        transition: all 1s ease;
+        
+        &:hover {
+            text-decoration: none;
+            color: #691010;
+            background-color: white;
+        }
+        
+    }
+}
+
+@media (max-width: 991px) {
+    header {
+        .socials {
+            a {
+                
+            i {
+                font-size: 1.3rem;
+                width: 2.3rem;
+                height: 2.3rem;
+                margin-left: .6rem;
+            }
+        }
+        }
+        
+        .login {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    header {
+        
+        #nav_bar {
+            
+        button {
+            display: none;
+        }
+        
+        .dropdown-menu {
+                display: none;
+        }
+    }
+}
+}

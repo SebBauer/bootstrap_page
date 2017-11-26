@@ -1,0 +1,8 @@
+@import '../../../plugins/reset';
+@import '../../../plugins/variables';
+@import '../../../plugins/mixins';
+@import '../../../plugins/extends';
+@import '../../../scss_header_and_footer/header/Header';
+@import 'body_reservation';
+@import 'media_reservation';
+@import '../../../scss_header_and_footer/footer/_footer_reservation_and_login';

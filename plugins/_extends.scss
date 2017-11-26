@@ -1,0 +1,66 @@
+%shutter_mobile_index {
+    width: 100%;
+    height: 40%;
+    z-index: 2;
+}
+
+%p_margin_0 {
+    margin: 0;
+}
+
+%form_height_100 {
+    height: 100%;
+}
+
+%font_reservation_form {
+    font: {
+        family: $quicksand;
+        weight: 500;
+        size: 1.1rem;
+    }
+}
+
+%contact_padding_border_verflow {
+    padding: 0;
+    border-radius: 3rem;
+    overflow: hidden;
+}
+
+%contact_h4 {
+    padding: 1rem 1rem 0 1rem;                
+    font: {
+        family: $caveat;
+        size: 4rem;
+    }
+    text-align: center;          
+    color: $main_color;          
+}
+
+%contact_executive_cargo_i {
+    margin: {
+        top: 4rem;
+        bottom: 2rem;
+    }
+    font-size: 5rem;
+    color: $main_color;
+}
+
+%contact_executive_cargo_h6 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: $main_color;
+}
+
+%contact_executive_cargo_p {
+    padding-bottom: 2rem;
+    font: {
+        family: $quicksand;
+        size: 1.3rem;
+    }
+    color: #6a6a6a;
+}
+
+%contact_executive_cargo_p_color {
+    color: $main_color;
+    font-weight: 700;
+}

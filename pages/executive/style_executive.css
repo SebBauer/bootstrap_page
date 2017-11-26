@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 10px; }
+
+header .container-fluid {
+  padding: 0; }
+header .row {
+  margin: 0; }
+header .dropdown-toggle::after {
+  content: none; }
+header .dropdown-menu {
+  background-color: #76224a;
+  min-width: 20rem; }
+header a {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.8rem; }
+header #logo_container {
+  margin-bottom: 1rem; }
+  header #logo_container #logo {
+    margin: 1rem 0;
+    background: url("../../images/qatar_airways_logo.png") center/cover no-repeat;
+    background-size: contain;
+    height: 16vh;
+    position: relative; }
+header #nav {
+  background-color: #691a40;
+  height: 5rem; }
+header #nav_bar button {
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: #691a40;
+  border: 1px solid white;
+  border-radius: .25rem; }
+header #nav_bar .dropdown-menu a {
+  color: white; }
+header #navbarNav .navbar-nav {
+  width: 100%; }
+  header #navbarNav .navbar-nav div a {
+    color: white; }
+header .socials a {
+  text-decoration: none; }
+  header .socials a i {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 2.2rem;
+    color: rgba(206, 205, 205, 0.5);
+    border-radius: 50%;
+    width: 3.3rem;
+    height: 3.3rem;
+    margin-left: .5rem;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+    header .socials a i:hover {
+      color: #691010;
+      border: none;
+      background-color: white; }
+header .login {
+  height: 4.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  color: rgba(206, 205, 205, 0.5);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
+  header .login:hover {
+    text-decoration: none;
+    color: #691010;
+    background-color: white; }
+
+@media (max-width: 991px) {
+  header .socials a i {
+    font-size: 1.3rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-left: .6rem; }
+  header .login {
+    font-size: 1.1rem; } }
+@media (min-width: 992px) {
+  header #nav_bar button {
+    display: none; }
+  header #nav_bar .dropdown-menu {
+    display: none; } }
+body {
+  height: 100vh; }
+  body .container-fluid {
+    padding: 0; }
+  body section {
+    position: relative; }
+    body section div:first-child {
+      background: url("../../images/exclusive.jpg") bottom/cover no-repeat;
+      height: 80vh;
+      width: 100%; }
+    body section div:nth-child(2) {
+      height: 70%;
+      width: 100%;
+      top: 0;
+      position: absolute;
+      background: -webkit-gradient(linear, left top, left bottom, from(#892d59), to(rgba(105, 16, 16, 0)));
+      background: linear-gradient(to bottom, #892d59, rgba(105, 16, 16, 0));
+      z-index: 2; }
+    body section div:last-child {
+      height: 30%;
+      width: 80%;
+      position: absolute;
+      margin-top: 1rem;
+      z-index: 3; }
+      body section div:last-child h3 {
+        font-family: "Pacifico", cursive;
+        color: #5a1436;
+        font-size: 2.8rem;
+        padding-top: 5rem;
+        padding-bottom: 1rem; }
+      body section div:last-child p {
+        padding: 0 .5rem;
+        font-family: "Quicksand", sans-serif;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-align: center;
+        color: #fff; }
+      body section div:last-child form input[type='button'] {
+        height: 3rem;
+        width: 7rem;
+        border-radius: 1rem;
+        border: 1px solid #691a40;
+        margin-top: .5rem;
+        font-family: "Quicksand", sans-serif;
+        background-color: rgba(105, 26, 64, 0.15);
+        color: whitesmoke; }
+
+footer {
+  height: 5rem;
+  background-color: #691a40;
+  color: white;
+  font-size: 1.4rem;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center; }
+  footer p {
+    padding-top: 1.5rem; }
+
+@media (min-width: 992px) {
+  footer {
+    text-align: left; }
+    footer p {
+      padding-left: 2rem; } }
+@media (min-width: 960px) {
+  body section {
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    body section div:nth-child(2) {
+      height: 100%;
+      width: 70%;
+      right: 0;
+      background: -webkit-gradient(linear, right top, left top, from(#892d59), to(rgba(105, 16, 16, 0)));
+      background: linear-gradient(to left, #892d59, rgba(105, 16, 16, 0)); }
+    body section div:last-child {
+      height: 35%;
+      width: 35%;
+      right: 5rem;
+      margin-top: -1rem;
+      padding-bottom: 4rem; }
+      body section div:last-child h3 {
+        font-size: 4rem; }
+      body section div:last-child p {
+        font-size: 1.5rem; }
+      body section div:last-child form input[type='button'] {
+        height: 4rem;
+        width: 10rem;
+        font-size: 1.8rem;
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease; }
+        body section div:last-child form input[type='button']:hover {
+          background-color: rgba(105, 26, 64, 0.7); } }
+@media (min-width: 1140px) {
+  body section div:last-child h3 {
+    font-size: 4.5rem; } }
+
+/*# sourceMappingURL=style_executive.css.map */

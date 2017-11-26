@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 10px; }
+
+header .container-fluid {
+  padding: 0; }
+header .row {
+  margin: 0; }
+header .dropdown-toggle::after {
+  content: none; }
+header .dropdown-menu {
+  background-color: #76224a;
+  min-width: 20rem; }
+header a {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.8rem; }
+header #logo_container {
+  margin-bottom: 1rem; }
+  header #logo_container #logo {
+    margin: 1rem 0;
+    background: url("../../images/qatar_airways_logo.png") center/cover no-repeat;
+    background-size: contain;
+    height: 16vh;
+    position: relative; }
+header #nav {
+  background-color: #691a40;
+  height: 5rem; }
+header #nav_bar button {
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: #691a40;
+  border: 1px solid white;
+  border-radius: .25rem; }
+header #nav_bar .dropdown-menu a {
+  color: white; }
+header #navbarNav .navbar-nav {
+  width: 100%; }
+  header #navbarNav .navbar-nav div a {
+    color: white; }
+header .socials a {
+  text-decoration: none; }
+  header .socials a i {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 2.2rem;
+    color: rgba(206, 205, 205, 0.5);
+    border-radius: 50%;
+    width: 3.3rem;
+    height: 3.3rem;
+    margin-left: .5rem;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+    header .socials a i:hover {
+      color: #691010;
+      border: none;
+      background-color: white; }
+header .login {
+  height: 4.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  color: rgba(206, 205, 205, 0.5);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
+  header .login:hover {
+    text-decoration: none;
+    color: #691010;
+    background-color: white; }
+
+@media (max-width: 991px) {
+  header .socials a i {
+    font-size: 1.3rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-left: .6rem; }
+  header .login {
+    font-size: 1.1rem; } }
+@media (min-width: 992px) {
+  header #nav_bar button {
+    display: none; }
+  header #nav_bar .dropdown-menu {
+    display: none; } }
+.col-12 {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none; }
+
+section {
+  background-color: whitesmoke; }
+  section .classes {
+    height: 40rem;
+    margin-top: 7rem;
+    padding: 0;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: #76224a;
+    -webkit-box-shadow: 0 0 4rem #892d59;
+            box-shadow: 0 0 4rem #892d59; }
+    section .classes:last-child {
+      margin-bottom: 7rem; }
+    section .classes #first_class {
+      background: url("../../images/first_class.jpg") center/cover no-repeat;
+      height: 50%;
+      padding: 0; }
+    section .classes #bussiness {
+      background: url("../../images/bussiness.jpg") center/cover no-repeat;
+      height: 50%;
+      padding: 0; }
+    section .classes #economy {
+      background: url("../../images/economy.jpg") center/cover no-repeat;
+      height: 50%;
+      padding: 0; }
+    section .classes .classes_text {
+      height: 50%;
+      display: table-row; }
+      section .classes .classes_text h4 {
+        font-size: 2.5rem;
+        font-family: "Caveat", cursive;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        color: #fff; }
+      section .classes .classes_text p {
+        color: #fff;
+        font-family: "Quicksand", sans-serif;
+        padding: 0 1.5rem; }
+
+footer {
+  height: 5rem;
+  background-color: #691a40;
+  color: white;
+  font-size: 1.4rem;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center; }
+  footer p {
+    padding-top: 1.5rem; }
+
+@media (min-width: 992px) {
+  footer {
+    text-align: left; }
+    footer p {
+      padding-left: 2rem; } }
+@media (min-width: 400px) {
+  section .classes .classes_text p {
+    font-size: 1.2rem; } }
+@media (min-width: 600px) {
+  section .classes .classes_text h4 {
+    font-size: 3rem; }
+  section .classes .classes_text p {
+    font-size: 1.4rem; } }
+@media (min-width: 800px) {
+  section .classes .classes_text p {
+    font-size: 1.5rem; } }
+@media (min-width: 992px) {
+  section .classes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 10rem;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
+    section .classes:last-child {
+      margin-bottom: 10rem; }
+    section .classes:hover {
+      -webkit-box-shadow: 0 0 10rem #892d59;
+              box-shadow: 0 0 10rem #892d59; }
+    section .classes #first_class {
+      height: 100%;
+      width: 60%;
+      display: inline-block; }
+    section .classes #bussiness {
+      height: 100%;
+      width: 60%;
+      display: inline-block; }
+    section .classes #economy {
+      height: 100%;
+      width: 60%;
+      display: inline-block; }
+    section .classes .classes_text {
+      height: auto;
+      width: 40%;
+      float: right; }
+      section .classes .classes_text h4 {
+        font-size: 5rem; }
+      section .classes .classes_text p {
+        font-size: 1.7rem; } }
+
+/*# sourceMappingURL=style_classes.css.map */

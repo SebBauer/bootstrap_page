@@ -1,0 +1,132 @@
+body {
+    height: 100vh;
+    
+    #form_container {
+        @include height_width(61vh, 100%);
+
+        #form {
+            @include height_width(45vh, 90%);    
+            background-color: #e6e6e6;
+            border-radius: 2rem;
+    
+            #reservation_menu {
+                @include height_width(80%, 15%); 
+                border-top-left-radius: 2rem;
+                border-bottom-left-radius: 2rem;
+                background-color: gray;
+        
+                // "i" to all divs
+                
+                i {
+                    color: $white_font;
+                    font-size: 2rem;
+                }
+               
+                div {      
+                    &:nth-child(-n+2) {
+                        @include height_width(30%, 100%); 
+                        border-top-left-radius: 2rem;             
+                    }
+            
+                    &:nth-child(2) {
+                        border-top-left-radius: 0rem;  
+                    }
+            
+                    &:last-child {
+                        @include height_width(20%, 100%); 
+                        border-bottom-left-radius: 2rem;
+                    }
+                }
+    
+            }
+    
+            #reservation_text {
+                @include height_width(80%, 20%); 
+                background-color: $background_gray;
+
+                p {
+                    font-family: $quicksand;
+                    color: $white_font;
+                }
+        
+                div {
+            
+                    &:nth-child(-n+2) {
+                        @include height_width(30%, 100%);    
+                        
+                        p {
+                            @extend %p_margin_0;
+                        }
+                    }
+            
+                    &:last-child {
+                        height: 20%; 
+                
+                        p {
+                            @extend %p_margin_0;    
+                        }
+                    }
+                }
+            }
+    
+    
+            #reservation_form {
+                @include height_width(80%, 50%); 
+                background-color: $background_gray;
+                border-bottom-right-radius: 2rem;
+                border-top-right-radius: 2rem;
+        
+                div {
+            
+                    &:nth-child(-n+2) {
+                        @include height_width(30%, 100%);
+                
+                        form {
+                            @extend %form_height_100;
+                        
+                            input[type="text"], input[type="datetime-local"] {
+                                @include height_width(2.5rem, 80%); 
+                                @extend %font_reservation_form;
+                                border: 1px solid #691a40;
+                                border-radius: 2rem;
+                                background-color: $background_whitesmoke;
+                            }
+                        }            
+                    }
+            
+                    &:nth-child(3) {
+                        height: 20%;
+                
+                        form {
+                            @extend %form_height_100; 
+                    
+                            input[type="number"] {
+                                @include height_width(2.5rem, 40%);
+                                @extend %font_reservation_form;
+                                border: 1px solid #691a40;
+                                border-radius: 2rem;
+                                background-color: $background_whitesmoke;
+                            }    
+                        }
+                    }
+            
+                    &:last-child {
+                        height: 20%;
+                
+                        form {
+                            @extend %form_height_100;
+                    
+                            button {
+                                @include height_width(2.5rem, 90%); 
+                                border: 1px solid $main_color;
+                                border-radius: 2rem;
+                                background-color: $main_color;
+                                color: $white_font;
+                            }
+                        }
+                    }
+                }
+            }    
+        }
+    }            
+}

@@ -1,0 +1,81 @@
+@include media_queries_min(400px) {
+    section {
+        .classes {
+            .classes_text {
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@include media_queries_min(600px) {
+    section {
+        .classes {
+            .classes_text {
+                
+                h4 {
+                    font-size: 3rem;    
+                }
+                
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+@include media_queries_min(800px) {
+    section {
+        .classes {
+            .classes_text {
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@include media_queries_min(992px) {
+    section {
+        .classes {
+            display: flex;
+            flex-direction: row;            
+            margin-top: 10rem; 
+            transition: all 1s ease;
+            
+                &:last-child {
+                margin-bottom: 10rem;
+                }
+            
+                &:hover {
+                    box-shadow: 0 0 10rem $second_and_shutter_color;
+                }
+            
+            @each $img_name in $image_classes_photo {
+            
+                #{$img_sign}#{$img_name} {
+                    @include height_width(100%, 60%);
+                    display: inline-block;
+                }                      
+            }
+            
+            
+            .classes_text {
+                @include height_width(auto, 40%);
+                float: right;
+            
+                h4 {
+                    font-size: 5rem;
+                }
+                
+                p {
+                    font-size: 1.7rem;
+                }
+            } 
+        }
+    }
+}

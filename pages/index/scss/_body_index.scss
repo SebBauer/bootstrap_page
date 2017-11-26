@@ -1,0 +1,204 @@
+#mobile_slider {
+    position: relative;
+    padding: 0;
+    height: 60vh;
+    background: url('../../#{$img_path}first_class.jpg') center/cover no-repeat;
+    
+    #shutter_mobile {
+        @extend %shutter_mobile_index;
+        background: linear-gradient(to bottom, $second_and_shutter_color, rgba(137, 45, 89, 0));
+    }    
+    
+    #shutter_mobile_two {
+        @extend %shutter_mobile_index;
+        position: absolute;
+        background: linear-gradient(to top, $second_and_shutter_color, rgba(137, 45, 89, 0));
+        bottom: 0;
+    }
+}
+
+#slider {
+    display: none;
+}
+
+
+#our_awards {    
+    height: 100%;
+    background-color: $second_and_shutter_color;
+    
+    #awards_intro {
+        @include font($caveat, 1.8rem, 700);
+        height: auto;
+        padding: 1rem 1rem 0 1rem;
+        text-align: center;
+        background-color: $main_color;
+        color: $white_font;
+    }
+    
+    #awards {
+        height: 100%;
+        padding: 2rem 0;
+            
+        div {
+            padding: 1rem 0;
+            margin: 1rem 2rem;
+            border-radius: 1rem;
+            background-color: $third_color;
+                
+                i {
+                    color: $white_font;
+                    font-size: 3.5rem;
+                }
+                
+                h5 {
+                    @include font($quicksand, 1.4rem, 400);
+                    margin-top: 2rem;
+                    margin-bottom: 1rem;
+                    color: $white_font;
+                }
+                
+                p {
+                    @include font($quicksand, 1.5rem, 700);
+                    color: $white_font;
+                }
+            }
+        }
+}
+
+#promotions {    
+    background-color: #e8e8e8;
+    
+    h3 {
+        font: {
+            family: $quicksand;
+            size: 2rem;
+            }
+        padding: 2rem 0 3rem 10%;
+    }
+    
+    .promotion {
+        height: 20rem;
+        margin-bottom: 3rem;
+        padding: 0;
+        border-bottom: {
+            left-radius: 1rem;
+            right-radius: 1rem;
+            }
+        overflow: hidden;
+        
+        // Loop for pictures from promotion divs //
+        
+        @each $img_name in $image_promotion_photo {
+            
+            #{$img_sign}#{$img_name} {
+                background: url('../../#{$img_path}#{$img_name}.jpg') center/cover no-repeat;
+            }
+            
+            $img_number: $img_number + 1;
+        }
+        
+        // Shutter to promotion only for computers //
+        
+        .shutter_promotion {
+            display: none;
+            
+            i {
+                display: none;
+            }
+        }
+        
+        .promotion_photo {
+            height: 70%;
+        }
+        
+        .promotion_text {
+            height: 30%;
+            background-color: white;
+            
+                p {
+                @include font($quicksand, 1.7rem, 700);
+                margin-bottom: .2rem;
+                padding-left: 1rem;
+                color: $main_color;
+                    
+                    &:last-child {
+                        font-size: 2.3rem;    
+                    }
+                }
+            
+        }
+        
+
+    }
+}
+
+#contact {
+    overflow: hidden;    
+    
+    #contact_intro {
+        background-color: $main_color;
+                
+        p {
+            font: {
+                family: $caveat;
+                size: 1.8rem;
+            }
+            padding: 1rem 1rem 0 1rem;
+            text-align: center;          
+            color: $white_font;
+            
+            strong {
+                font-size: 2rem;
+            }
+            
+        }
+            
+            
+    }
+        
+    #contact_divs {        
+        background-color: $second_and_shutter_color;
+        height: auto;
+            
+        div {                             
+            &:nth-child(-n+2) {
+                border-bottom: 1px dotted white;
+                }
+                
+            &:first-child {
+                padding: 3rem 0 5rem 0;
+                }
+                
+            &:nth-child(n+2) {
+                padding: 2rem 0;
+                }
+                
+              
+            i {
+                margin: 2rem 0;
+                font-size: 5rem;
+                color: $white_font;
+
+                }
+            
+            h6 {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+                color: whitesmoke;
+                }
+                
+            p {
+                font: {
+                    family: $quicksand;
+                    size: 1.3rem;
+                    }
+                color: #a8a8a8;                    
+                }
+                
+            .p_color {
+                color: whitesmoke;
+                font-weight: 700;
+                }
+            }
+        }
+}

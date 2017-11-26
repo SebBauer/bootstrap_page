@@ -1,0 +1,57 @@
+@include media_queries_min(960px) {
+    body {
+        section {
+            position: relative;
+            align-items: center;
+            
+            div {
+                &:nth-child(2) {
+                    @include height_width(100%, 70%);
+                    right: 0;
+                    background: linear-gradient(to left, $second_and_shutter_color, rgba(105, 16, 16, 0));
+                }
+                
+                &:last-child {
+                    @include height_width(35%, 33%);
+                    right: 5rem;
+                    margin-top: -1rem;
+                    padding-bottom: 4rem;
+                    
+                    h3 {
+                        font-size: 4rem;
+                    }
+                    
+                    p {
+                        font-size: 1.5rem;
+                    }
+                    
+                    form {
+                        input[type='button'] {
+                            @include height_width(4rem, 10rem);
+                            font-size: 1.8rem;
+                            transition: all 1s ease;
+                            
+                            &:hover {
+                                background-color: rgba(105, 26, 64, 0.7);                               
+                            }
+                        }                       
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media_queries_min(1140px) {
+    body {
+        section {
+                div {
+                    &:last-child {
+                        h3 {
+                            font-size: 4.5rem;
+                        }
+                    }
+                }
+        }
+    }    
+}

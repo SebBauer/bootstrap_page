@@ -1,0 +1,141 @@
+section {    
+    #contact_qatar_airways {
+        @extend %contact_padding_border_verflow;
+        margin: 5rem 0;       
+    
+        #contact_intro {         
+            background-color: #a3a3a3;
+                     
+            h4 {
+            @extend %contact_h4;         
+            }           
+        }
+        
+        #contact_divs {           
+            background-color: lightgray;
+            height: auto;
+            
+            div {  
+                &:first-child {
+                    padding: 3rem 0 5rem 0;
+                }
+                
+                &:nth-child(-n+2) {
+                    border-bottom: 1px dotted white;
+                }
+                
+                &:nth-child(n+2) {
+                    padding: 2rem 0;
+                }
+                
+                i {
+                    top: 0;
+                    margin: {
+                        top: 2rem;
+                        bottom: 2rem;
+                    }
+                    font-size: 5rem;
+                    color: $main_color;
+                }
+            
+                h6 {
+                    color: $main_color;
+                    font-size: 2rem;
+                    margin-bottom: 2rem;
+                }
+                
+                p {
+                    color: #6a6a6a;
+                    font: {
+                        family: $quicksand;
+                        size: 1.3rem;
+                    }
+                }
+                
+                .p_color {
+                    color: $main_color;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    
+    #executive_cargo {   
+        padding: 0;
+    
+        #contact_qatar_executive {
+            @extend %contact_padding_border_verflow;
+            margin-bottom: 5rem;
+        
+            #contact_qatar_executive_intro { 
+                background-color: #a3a3a3;           
+        
+                h4 {
+                    @extend %contact_h4;         
+                }           
+            }
+        
+            &:first-child {     
+                background-color: lightgray;
+                height: auto;
+            
+                    i {
+                        @extend %contact_executive_cargo_i;
+                    }
+            
+                    h6 {
+                        @extend %contact_executive_cargo_h6;
+                    }
+                
+                    p {
+                        @extend %contact_executive_cargo_p;        
+                    }
+                
+                    .p_color {
+                        @extend %contact_executive_cargo_p_color;
+                    }
+            
+            }         
+        }
+    
+    
+    
+        #contact_qatar_cargo {
+        @extend %contact_padding_border_verflow;
+        margin-bottom: 5rem;
+
+        
+            #contact_qatar_cargo_intro {
+        
+                background-color: #a3a3a3;
+                margin: 0;
+                       
+                h4 {
+                @extend %contact_h4;         
+                }          
+            }
+        
+                &:nth-of-type(2) {       
+                    background-color: lightgray;
+                    height: auto;
+            
+                    i {
+                        @extend %contact_executive_cargo_i;
+                    }
+            
+                    h6 {
+                        @extend %contact_executive_cargo_h6;
+                    }
+                
+                    p {
+                        @extend %contact_executive_cargo_p;
+                    }
+                
+                    .p_color {
+                        @extend %contact_executive_cargo_p_color;
+                     }
+            
+                }
+        }           
+    }
+}

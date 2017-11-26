@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sebastian Bauer">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat:400,700|Pacifico|Quicksand:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Qatar Airways</title>
+    
+</head>
+
+<body>
+
+<header>
+  
+    <div class="container-fluid">
+   
+        <div class="row justify-content-center" id="logo_container">
+   
+           <div class="col col-8" id="logo"></div>
+    
+        </div>
+        
+<!-- Navigation Bootstrap (navbar + dodano funkcje Dropdown) --> 
+        
+        <div class="row col-12 align-items-center" id="nav"> 
+  
+    <!-- Button for mobiles navigation -->    
+
+            <nav class="navbar navbar-expand-lg navbar-light col-2 col-lg-8" id="nav_bar">
+ 
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     
+                    <span class="navbar-toggler-icon"></span>
+      
+                </button>
+  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+         
+                        <a class="dropdown-item" href="../index/index.html">Home</a>       
+                        <a class="dropdown-item" href="../reservation/reservation.html">Reservation</a>
+                        <a class="dropdown-item" href="../classes/classes.html">Flight Classes</a>
+                        <a class="dropdown-item" href="../executive/executive.html">Qatar Executive</a>
+                        <a class="dropdown-item" href="../cargo/cargo.html">Qatar Cargo</a>
+                        <a class="dropdown-item" href="../contact/contact.html">Contact</a>
+          
+                    </div>
+
+    <!-- Navigation to tablets/laptops -->
+      
+              <div class="collapse navbar-collapse" id="navbarNav">
+   
+                  <div class="navbar-nav d-flex justify-content-around">
+     
+                      <div><a class="nav-item nav-link" href="../index/index.html">Home</a></div>     
+                      <div><a class="nav-item nav-link" href="../reservation/reservation.html">Reservation</a></div>       
+                      <div><a class="nav-item nav-link" href="../classes/classes.html">Flight Classes</a></div>       <div><a class="nav-item nav-link" href="../executive/executive.html">Qatar Executive</a></div>     <div><a class="nav-item nav-link" href="../cargo/cargo.html">Qatar Cargo</a></div>       
+                      <div><a class="nav-item nav-link" href="../contact/contact.html">Contact</a></div>
+      
+                  </div>
+    
+              </div>
+  
+           </nav>
+  
+    <!-- Socials -->    
+   
+           <div class="socials col-7 offset-1 col-lg-3 offset-lg-0 d-flex justify-content-end align-items-center">
+    
+               <a href="https://www.facebook.com/qatarairways/" target="_blank"><i class="fa fa-facebook d-flex justify-content-center align-items-center" aria-hidden="true"></i></a>
+               <a href="https://www.youtube.com/user/qatarairways" target="_blank"><i class="fa fa-youtube d-flex justify-content-center align-items-center" aria-hidden="true"></i></a>
+               <a href="https://twitter.com/qatarairways" target="_blank"><i class="fa fa-twitter d-flex justify-content-center align-items-center" aria-hidden="true"></i></a>
+               <a href="https://www.instagram.com/qatarairways/" target="_blank"><i class="fa fa-instagram d-flex justify-content-center align-items-center" aria-hidden="true"></i></a>
+               <a href="https://www.linkedin.com/company/qatar-airways" target="_blank"><i class="fa fa-linkedin d-flex justify-content-center align-items-center" aria-hidden="true"></i></a>
+    
+    
+          </div>
+  
+    <!-- To CRM -->
+   
+          <a href="../login/login.html" class="login col-2 col-sm-1 offset-sm-1 col-lg-1 offset-lg-0 d-flex justify-content-center align-items-center flex-column">
+    
+              <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+    
+                Login
+    
+          </a>
+
+   
+      </div>
+      
+  </div>
+  
+</header>
+
+<!-- Slider to mobiles -->
+      
+<section class="container-fluid" id="mobile_slider">
+
+    <div id="shutter_mobile"></div>
+    <div id="shutter_mobile_two"></div>
+            
+</section>
+  
+<!-- Slider to tablets/computers (min-width: 992px) --> 
+   
+<section id="slider">
+  
+    <div id="shutter_one"></div>
+    
+   <!-- Slider from Bootstrap -->
+   
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+  
+        <div class="carousel-inner">
+        
+        <!-- First slider -->    
+        
+            <div class="carousel-item active" id="first_slider">
+    
+                <div class="carousel-caption d-none d-md-flex flex-column" id="one">
+            
+                    <h3>Best planes</h3>
+                    
+                    <p>The newest and the fastest aircrafts in the world!</p>
+    
+                </div>
+    
+            </div>
+            
+        <!-- Second slider -->
+            
+            <div class="carousel-item" id="second_slider">
+    
+    
+                <div class="carousel-caption d-none d-md-flex align-items-center justify-content-center">
+                
+                    <h3>Comfort</h3>
+                    
+                    <p>The most comfortable aircrafts. Fell like at home!</p>
+    
+                </div>
+    
+            </div>
+            
+        <!-- Third slider -->
+            
+            <div class="carousel-item" id="third_slider">
+    
+                <div class="carousel-caption d-none d-md-flex align-items-center justify-content-center">
+                
+                    <h3>Your dreams</h3>
+                    
+                        <p>Fly to your dream places!</p>
+    
+                </div>
+                
+            </div>
+            
+        </div>
+  
+    <!-- Bootstrap buttons in slider prev & next -->
+  
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            
+            <span class="sr-only">Previous</span>
+            
+        </a>
+        
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            
+            <span class="sr-only">Next</span>
+  
+        </a>
+  
+  
+    </div>
+   
+</section>
+
+    <!-- Awards section -->
+    
+<section class="container-fluid" id="our_awards">
+   
+   <!-- Awards head -->
+    
+    <div class="row justify-content-center align-items-center" id="awards_intro">
+            
+        <p>Every day we flight to all land of the Earth!</p>
+            
+    </div>
+       
+    <!-- Awards main section -->
+        
+    <div class="row d-flex justify-content-center" id="awards">
+        
+        <div class="col-7 col-sm-4 col-md-2 d-flex justify-content-center align-items-center flex-column">
+                
+            <i class="fa fa-plane" aria-hidden="true"></i>
+               
+            <h5>Flights per day</h5>
+                   
+            <p>895</p>    
+                
+        </div>
+        
+                
+        <div class="col-7 col-sm-4 col-md-2 d-flex justify-content-center align-items-center flex-column">
+                
+            <i class="fa fa-globe" aria-hidden="true"></i>
+               
+            <h5>Countries per day</h5>
+                   
+            <p>172</p>    
+                
+        </div>
+        
+                
+        <div class="col-7 col-sm-4 col-md-2 d-flex justify-content-center align-items-center flex-column">
+                
+            <i class="fa fa-users" aria-hidden="true"></i> 
+               
+            <h5>Passangers per day</h5>
+                  
+            <p>50765</p>   
+                
+        </div>
+            
+        
+        <div class="col-7 col-sm-4 col-md-2 d-flex justify-content-center align-items-center flex-column">
+                
+            <i class="fa fa-arrows-h" aria-hidden="true"></i> 
+               
+            <h5>Miles per day</h5>
+                  
+            <p>403587</p>    
+                
+        </div>    
+            
+    </div>
+        
+</section>
+ 
+    <!-- Promotions -->
+  
+<section class="container-fluid" id="promotions">
+    
+    <div class="row">
+        
+        <h3>Promotions**</h3>    
+        
+    </div>
+    
+        <!-- Promotions squares -->
+        
+            <!-- 1 -->
+    
+    <div class="row d-flex justify-content-center">
+       
+       <div class="promotion col-8 col-sm-4 col-lg-3">
+          
+          <div class="shutter_promotion d-flex justify-content-center align-items-center">
+              
+              <div class=" d-flex justify-content-center align-items-center"><i class="fa fa-map" aria-hidden="true"></i></div>
+              
+          </div>
+          
+          <div class="promotion_photo" id="rome"></div>
+          
+          <div class="promotion_text">
+               
+               <p>Rome</p>
+               
+               <p>570 PLN</p>
+               
+          </div>
+                    
+       </div>
+       
+           <!-- 2 -->
+       
+       <div class="promotion col-8 col-sm-4 col-lg-3">
+          
+          <div class="shutter_promotion d-flex justify-content-center align-items-center">
+              
+              <div class=" d-flex justify-content-center align-items-center"><i class="fa fa-map" aria-hidden="true"></i></div>
+              
+          </div>
+          
+          <div class="promotion_photo" id="vien"></div>
+          
+          <div class="promotion_text">
+              
+              <p>Vien</p>
+              
+              <p>480 PLN</p>
+              
+          </div>
+                
+       </div>
+       
+           <!-- 3 -->
+           
+       <div class="promotion col-8 col-sm-4 col-lg-3">
+          
+          <div class="shutter_promotion d-flex justify-content-center align-items-center">
+              
+              <div class=" d-flex justify-content-center align-items-center"><i class="fa fa-map" aria-hidden="true"></i></div>
+              
+          </div>
+          
+          <div class="promotion_photo" id="berlin"></div>
+          
+          <div class="promotion_text">
+              
+              <p>Berlin</p>
+              
+              <p>460 PLN</p>
+                  
+          </div>
+               
+       </div>
+       
+           <!-- 4 -->
+           
+       <div class="promotion col-8 col-sm-4 col-lg-3">
+          
+          <div class="shutter_promotion d-flex justify-content-center align-items-center">
+              
+              <div class=" d-flex justify-content-center align-items-center"><i class="fa fa-map" aria-hidden="true"></i></div>
+              
+          </div>
+          
+          <div class="promotion_photo" id="las_vegas"></div>
+          
+          <div class="promotion_text">
+             
+              <p>Las Vegas</p>
+              
+              <p>2480 PLN</p>     
+           
+          </div>
+               
+       </div>
+       
+           <!-- 5 -->
+       
+       <div class="promotion col-8 col-sm-4 col-lg-3">
+          
+          <div class="shutter_promotion d-flex justify-content-center align-items-center">
+              
+              <div class=" d-flex justify-content-center align-items-center"><i class="fa fa-map" aria-hidden="true"></i></div>
+              
+          </div>
+          
+          <div class="promotion_photo" id="bali"></div>
+          
+          <div class="promotion_text">
+          
+              <p>Bali</p>
+              
+              <p>2890 PLN</p>     
+           
+          </div>
+               
+       </div>
+       
+           <!-- 6 -->
+           
+       <div class="promotion col-8 col-sm-4 col-lg-3">
+          
+          <div class="shutter_promotion d-flex justify-content-center align-items-center">
+              
+              <div class=" d-flex justify-content-center align-items-center"><i class="fa fa-map" aria-hidden="true"></i></div>
+              
+          </div>
+          
+          <div class="promotion_photo" id="santorini"></div>
+          
+          <div class="promotion_text">
+          
+              <p>Santorini</p>
+              
+              <p>1200 PLN</p>     
+           
+          </div>
+               
+       </div>
+       
+           <!-- 7 -->
+       
+       <div class="promotion col-8 col-sm-4 col-lg-3">
+          
+          <div class="shutter_promotion d-flex justify-content-center align-items-center">
+              
+              <div class=" d-flex justify-content-center align-items-center"><i class="fa fa-map" aria-hidden="true"></i></div>
+              
+          </div>
+          
+          <div class="promotion_photo" id="rio"></div>
+          
+          <div class="promotion_text">
+          
+              <p>Rio de Janeiro</p>
+              
+              <p>3280 PLN</p>    
+           
+          </div>
+               
+       </div>
+       
+           <!-- 8 -->
+       
+       <div class="promotion col-8 col-sm-4 col-lg-3">
+          
+          <div class="shutter_promotion d-flex justify-content-center align-items-center">
+              
+              <div class=" d-flex justify-content-center align-items-center"><i class="fa fa-map" aria-hidden="true"></i></div>
+              
+          </div>
+          
+          <div class="promotion_photo" id="san_francisco"></div>
+           
+          <div class="promotion_text">
+        
+              <p>San Francisco</p>
+              
+              <p>4020 PLN</p>     
+           
+          </div>
+               
+       </div>
+        
+    </div>
+    
+</section>
+ 
+    <!-- Contact -->
+  
+<section class="container-fluid" id="contact">
+   
+       <!-- Contact head -->
+    
+    <div class="row d-flex justify-content-center align-items-center" id="contact_intro">
+        
+        <p>Most important thing for us is provide to you fast <strong>Contact</strong> with us</p>    
+        
+    </div>
+    
+    <div class="row d-flex justify-content-center align-items-center" id="contact_divs">
+      
+            <!-- Chat -->
+       
+       <div class="col-10 col-lg-4 text-center d-flex align-items-center flex-column">
+           
+           <i class="fa fa-comment" aria-hidden="true"></i>
+           
+           <h6>Chat</h6>
+            
+           <p>You can write with our consultants 24/7</p>    
+           
+       </div>
+       
+           <!-- Phone-->
+       
+       <div class="col-10 col-lg-4 text-center">
+          
+           <i class="fa fa-phone" aria-hidden="true"></i>    
+               
+           <h6>Call</h6>
+           
+           <p>Calls from landline phone</p>
+            
+           <p class="p_color">+48 801 801 801</p>
+            
+           <p>Calls from mobile phone</p>
+            
+           <p class="p_color">+48 801 01 01</p>  
+           
+       </div>
+            
+            <!-- Messages -->    
+             
+       <div class="col-10 col-lg-4 text-center">
+          
+           
+           <i class="fa fa-envelope" aria-hidden="true"></i>    
+           
+           <h6>Write</h6>
+           
+           <p>You can send a letter to address</p>
+            
+           <p class="p_color">Qatar Airways <br> al. Qatars 101 <br> 76-451 Qatar</p>  
+           
+       </div>
+        
+    </div>
+    
+</section>
+
+    <!-- Footer -->
+      
+<footer>
+    
+    <p>&copy; Qatar Airways | All rights reserved</p>
+    
+</footer>
+   
+<!-- ---------------------------- -->
+
+                                    
+<!-- Bootstrap scripts -->
+      
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

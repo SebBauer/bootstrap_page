@@ -1,0 +1,24 @@
+@mixin font($family, $size, $weight) {
+    font: {
+            family: $family;
+            size: $size;
+            weight: $weight;
+        }
+}
+
+@mixin media_queries_min($width) {
+    @media (min-width: $width) {
+        @content;
+    }
+}
+
+@mixin media_queries_max($width) {
+    @media (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin height_width($height, $width) {
+    height: $height;
+    width: $width;
+}

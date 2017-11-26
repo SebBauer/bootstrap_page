@@ -1,0 +1,55 @@
+.col-12 {
+    flex: none;
+}
+
+section {
+    background-color: $background_whitesmoke;
+    
+    .classes {
+        height: 40rem;
+        margin-top: 7rem;
+        padding: 0;
+        border-bottom: {
+            left-radius: 1rem;
+            right-radius: 1rem;
+        }
+        background-color: $third_color;
+        box-shadow: 0 0 4rem $second_and_shutter_color;
+        
+            &:last-child {
+                margin-bottom: 7rem;
+            }
+        
+            // Loop to pictures //
+        
+            @each $img_name in $image_classes_photo {
+            
+                #{$img_sign}#{$img_name} {
+                    background: url('../../#{$img_path}#{$img_name}.jpg') center/cover no-repeat;
+                    height: 50%;
+                    padding: 0;
+                }              
+            }
+        
+            .classes_text {
+                height: 50%;
+                display: table-row;
+            
+                h4 {
+                    font: {
+                        size: 2.5rem;
+                        family: $caveat;
+                        weight: 400;
+                    }
+                    margin-bottom: 1rem;
+                    color: $white_font;                  
+                }
+            
+                p {
+                    color: $white_font;
+                    font-family: $quicksand;
+                    padding: 0 1.5rem;    
+                }
+            }
+    }
+}
